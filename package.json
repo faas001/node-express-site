@@ -1,0 +1,23 @@
+{
+  "name": "express-site",
+  "version": "1.0.0",
+  "description": "Portfolio site using node and express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faas001/node-express-site.git"
+  },
+  "author": "Chris Faas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/faas001/node-express-site/issues"
+  },
+  "homepage": "https://github.com/faas001/node-express-site#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "pug": "^2.0.3"
+  }
+}

@@ -1,0 +1,69 @@
+{"projects" : [
+        { "id" : 0,
+          "project_name" : "Random quote generator",
+          "description" : "Simple page to randomly generate quote on click or 20 secs",
+          "technologies" : ["JavaScript", "HTML", "CSS"],
+          "live_link" : "https://faas001.github.io/Techdegree-Project-1/",
+          "github_link" : "https://github.com/faas001/Techdegree-Project-1",
+          "image_urls" : [
+                            "images\\rand-quoteL.png",
+                            "images\\rand-quote1.png",
+                            "images\\rand-quote2.png",
+                            "images\\rand-quote3.png"
+                        ]
+        },
+        { "id" : 1,
+            "project_name" : "Dynamic list pagination",
+            "description" : "Dynamically create pagination links to navigate sample student page",
+            "technologies" : ["JavaScript", "HTML", "CSS"],
+            "live_link" : "https://faas001.github.io/Techdegree-Project-2/",
+            "github_link" : "https://github.com/faas001/Techdegree-Project-2",
+            "image_urls" : [
+                              "images\\paginationL.png",
+                              "images\\pagination1.png",
+                              "images\\pagination2.png",
+                              "images\\pagination3.png"
+                          ]
+          },
+          { "id" : 2,
+            "project_name" : "Interactive form validation",
+            "description" : "Dynamically create form validation via JavaScript",
+            "technologies" : ["JavaScript", "HTML", "CSS"],
+            "live_link" : "https://faas001.github.io/interactive-form-v1/",
+            "github_link" : "https://github.com/faas001/interactive-form-v1",
+            "image_urls" : [
+                              "images\\interFormL.png",
+                              "images\\interForm1.png",
+                              "images\\interForm2.png",
+                              "images\\interForm3.png"
+                          ]
+          },
+          { "id" : 3,
+            "project_name" : "OOP game",
+            "description" : "Dynamically create form validation via JavaScript",
+            "technologies" : ["JavaScript", "HTML", "CSS", "Object Oriented Programming"],
+            "live_link" : "https://faas001.github.io/OOP-Game-Phrase-Hunter/",
+            "github_link" : "https://github.com/faas001/OOP-Game-Phrase-Hunter",
+            "image_urls" : [
+                              "images\\oopGameL.png",
+                              "images\\oopGame1.png",
+                              "images\\oopGame2.png",
+                              "images\\oopGame3.png"
+                          ]
+          },
+          { "id" : 4,
+            "project_name" : "API calls",
+            "description" : "Sample program to demonstrate API calls to random user public API",
+            "technologies" : ["JavaScript", "HTML", "CSS", "API"],
+            "live_link" : "https://faas001.github.io/public-api-requests/",
+            "github_link" : "https://github.com/faas001/public-api-requests",
+            "image_urls" : [
+                              "images\\apiL.png",
+                              "images\\api1.png",
+                              "images\\api2.png",
+                              "images\\api3.png"
+                          ]
+          }
+    ]
+
+}

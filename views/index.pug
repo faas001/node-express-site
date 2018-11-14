@@ -5,11 +5,12 @@ block content
     div
 
       //- Add a title or heading like My Portfolio, or Hey, Potential Employers, or Let's make the web great together! 
-      h1 Heading
+      h1 Code.Examples
 
       //- Add a description for your portfolio, what this project is, it's purpose, what it's suppossed to accomplish, etc. 
       p.lead.text-light
-        | Portfolio Description
+        | The following are an example of some of the projects I have completed since embarking on refreshing my tech skills. In most instances all JavaScript and DOM manipulation, and most of these projects had a design template to reference.
+        
   article.grid-container.portfolio-index
     
     .grid-x.grid-margin-x.small-up-2.medium-up-2.large-up-3
@@ -20,8 +21,10 @@ block content
       
       //- Here's what the Pug for each project example should look like. 
 
-      .cell
-        a(href='#')
-          img.thumbnail(src='https://placehold.it/550x550')
-          h5 Title
+      each project in projects
+      
+        .cell
+          a(href=`${project.live_link}` target="_blank")
+            img.thumbnail(src=`static\\${project.image_urls[0]}`)
+            h5= project.project_name 
       
