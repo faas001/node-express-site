@@ -9,7 +9,7 @@ block content
 
       //- Add a description for your portfolio, what this project is, it's purpose, what it's suppossed to accomplish, etc. 
       p.lead.text-light
-        | The following are an example of some of the projects I have completed since embarking on refreshing my tech skills. In most instances all JavaScript and DOM manipulation, and most of these projects had a design template to reference.
+        | The following are an example of some of the projects I have completed since embarking on refreshing my tech skills. In most instances all JavaScript coded from scratch to interact with DOM and dynamically create/modify HTML/CSS elements of design template.
         
   article.grid-container.portfolio-index
     
@@ -24,7 +24,7 @@ block content
       each project in projects
       
         .cell
-          a(href=`${project.live_link}` target="_blank")
+          a(href=`/project_${project.id}`)
             img.thumbnail(src=`static\\${project.image_urls[0]}`)
             h5= project.project_name 
       

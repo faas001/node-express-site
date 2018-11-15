@@ -28,7 +28,7 @@
           { "id" : 2,
             "project_name" : "Interactive form validation",
             "description" : "Dynamically create form validation via JavaScript",
-            "technologies" : ["JavaScript", "HTML", "CSS"],
+            "technologies" : ["JavaScript", "HTML", "CSS", "jQuery"],
             "live_link" : "https://faas001.github.io/interactive-form-v1/",
             "github_link" : "https://github.com/faas001/interactive-form-v1",
             "image_urls" : [
@@ -40,7 +40,7 @@
           },
           { "id" : 3,
             "project_name" : "OOP game",
-            "description" : "Dynamically create form validation via JavaScript",
+            "description" : "Word phrase guessing game utilizing object oriented programming concepts",
             "technologies" : ["JavaScript", "HTML", "CSS", "Object Oriented Programming"],
             "live_link" : "https://faas001.github.io/OOP-Game-Phrase-Hunter/",
             "github_link" : "https://github.com/faas001/OOP-Game-Phrase-Hunter",
@@ -54,7 +54,7 @@
           { "id" : 4,
             "project_name" : "API calls",
             "description" : "Sample program to demonstrate API calls to random user public API",
-            "technologies" : ["JavaScript", "HTML", "CSS", "API"],
+            "technologies" : ["JavaScript", "HTML", "CSS", "API", "AJAX"],
             "live_link" : "https://faas001.github.io/public-api-requests/",
             "github_link" : "https://github.com/faas001/public-api-requests",
             "image_urls" : [

@@ -20,6 +20,13 @@ app.get('/about', (req, res) => {
 
 });
 
+app.get('/project_:id', (req, res) => {
+    
+    res.render('project', { projects, id: req.params.id });
+
+});
+
+
 
 app.listen(3000, () => {
     console.log('The application is listening on port 3000...');
