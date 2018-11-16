@@ -63,7 +63,21 @@
                               "images\\api2.png",
                               "images\\api3.png"
                           ]
+          },
+          { "id" : 5,
+            "project_name" : "Node.JS and Express",
+            "description" : "Project to build portfolio site utilizing Node.JS, Express, and npm",
+            "technologies" : ["JavaScript", "HTML", "CSS", "Node.JS", "Express", "npm"],
+            "live_link" : "https://faas001.github.io/node-express-server/",
+            "github_link" : "https://github.com/faas001/node-express-server",
+            "image_urls" : [
+                              "images\\portL.png",
+                              "images\\port1.png",
+                              "images\\port2.png"
+                              
+                          ]
           }
+
     ]
 
 }
