@@ -1,4 +1,7 @@
 # node-express-site
+
+Demo at https://faas001-portfolio.herokuapp.com/
+
 Node Express portfolio site Techdegree project
 
 Node.Js w/ Express and PUG templating project portfolio site created as part of Fullstack JavaScript Treehouse Techdegree program.
