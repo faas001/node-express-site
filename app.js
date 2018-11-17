@@ -37,9 +37,11 @@ app.use((err, req, res, next) => {
     res.render('error', err);
 });
 
-// Start the express server to serve the localhost at port 3000
+// The below 'process.env.PORT' will need to be replaced with '3000' if you downloaded repo and want to run locally.
+// I am experimenting with hosting this online with Heroku free and was getting application error with user assigned port.
+// the 'process.env.PORT' will use the port provided by the Heroku server and the app works.
 app.listen(process.env.PORT, () => {
-    console.log('The application is listening on port 3000...', process.env.PORT);
+    console.log('The application is listening on Heroku assigned port ', process.env.PORT);
 
 });
 
