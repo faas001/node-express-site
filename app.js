@@ -5,38 +5,39 @@ const projects = data.projects;
 
 const app = express();
 
-app.set('view engine', 'pug');
-app.use('/static', express.static('public'));
+app.set('view engine', 'pug'); // let express know we're going to be using 'pug' to render html
+app.use('/static', express.static('public')); //include path for the necessary css/html/images resources in the public folder
 
-app.get('/', (req, res, next) => {
-    console.log('root');
+// Below app.get will render the approriate PUG template on page request
+app.get('/', (req, res) => {
+    console.log('root'); //just a visual anchor so that I can monitor page movement on terminal
     res.render('index', { projects });
-    next();
 });
 
-app.get('/about', (req, res, next) => {
+app.get('/about', (req, res) => {
     res.render('about');
-    next();
 });
 
-app.get('/project_:id', (req, res, next) => { 
+// render the project page that coincides with the project clicked (via id field)
+app.get('/project_:id', (req, res) => { 
     res.render('project', { projects, id: req.params.id });
-    next();
 });
 
+// Create page not found error message if one of the above routes is not request
 app.use((req, res, next) => {
     const err = new Error('Page not found');
     err.status = 404;
     next(err);
 });
 
+// If there is an error, render the the error page to display error message/status/stack
 app.use((err, req, res, next) => {
     res.locals.error = err;
     res.status(err.status);
     res.render('error', err);
 });
 
-
+// Start the express server to serve the localhost at port 3000
 app.listen(3000, () => {
     console.log('The application is listening on port 3000...');
 

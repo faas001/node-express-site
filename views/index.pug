@@ -4,24 +4,20 @@ block content
   article.grid-container.portfolio-intro
     div
 
-      //- Add a title or heading like My Portfolio, or Hey, Potential Employers, or Let's make the web great together! 
       h5
         img.thumbnail(src='static\\images\\projectPort.jpg')
 
-      //- Add a description for your portfolio, what this project is, it's purpose, what it's suppossed to accomplish, etc. 
+  
       p.lead.text-light
-        | The following are an example of some of the projects I have completed since embarking on refreshing my tech skills. In most instances all JavaScript coded from scratch to interact with DOM and dynamically create/modify HTML/CSS elements of design template.
+        | The following are an example of some of the projects I have completed since embarking on refreshing my tech skills. 
+        | In most instances all JavaScript coded from scratch to interact with DOM and dynamically create/modify HTML/CSS elements of design template.
+        | This portfolio of projects will grow as I continue to create, develop, and learn more of the MEAN/MERP JavaScript full stack development environment.
         
   article.grid-container.portfolio-index
     
     .grid-x.grid-margin-x.small-up-2.medium-up-2.large-up-3
 
-      //- Use the Pug `each` iterator to create a projet img, title and link in the markup for each of the projects you are showcasing.  
-      
-      //- Use a combination of interpolation and template literals as needed to dynamically generate the the routes in the href, as well as the img's src and the projects title.
-      
-      //- Here's what the Pug for each project example should look like. 
-
+      //- The below will loop through the projects array and build each project thumbnail, name, and link for when clicked.
       each project in projects
       
         .cell

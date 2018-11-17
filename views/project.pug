@@ -7,27 +7,27 @@ block content
     .grid-x
       .cell.small-6.medium-9.large-9
 
-        //- Use interploation to dynamically add the project title.
+        //- Display the appropriate project name based on project clicked on main page
         h1 #{projects[id].project_name}
 
-        //- Use interploation to dynamically add the project description.
+        //- Display the appropriate project description based on project clicked on main page
         p.lead.text-light
           | #{projects[id].description}
 
       .cell.portfolio-meta.small-6.medium-2.large-3
         h6 Technologies
 
-        //- Use an `each` iterator to replace the li tags below and interploation to dynamically add the technologies used in each project.
+        //- loop through the technologies listed for the project and create a list for each to display on screen
         ul
         each tech in projects[id].technologies
           li #{tech}
           
 
-        //- Use template literals and interpolation to add URLs to the hrefs below so they link to the repo and the live version of each project.
+        //- Display the appropriate project live demo/github links based on project clicked on main page
         a.button.expanded(href=`${projects[id].live_link}` target="_blank") Live Demo
         a.button.expanded(href=`${projects[id].github_link}` target="_blank") GitHub Repo
     
-      //- Replace the URLs in the src attributes below with template literals and interpolation to dynamically add three project images.  You only have to add one image.  But adding more images to show your app in different states demonstrates a level of thoroughness and professionalism that potential emplyers will like to see. 
+      //- Loop through the project images to display on the project page. The below will exclude the first item in the images array since it's used for the main landing page. 
       
       each image, index in projects[id].image_urls
         if index != 0
