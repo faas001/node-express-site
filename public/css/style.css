@@ -71,6 +71,10 @@ a:hover{
   object-fit: contain;
 }
 
+.cover {
+  object-fit: cover;
+}
+
 .portfolio-me{
   padding: 20px;
   background: #0d1625;
