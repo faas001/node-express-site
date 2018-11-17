@@ -68,7 +68,7 @@
             "project_name" : "Node.JS Express",
             "description" : "Project to build portfolio site utilizing Node.JS, Express, and npm",
             "technologies" : ["JavaScript", "HTML", "CSS", "Node.JS", "Express", "PUG", "npm"],
-            "live_link" : "https://faas001.github.io/node-express-site/",
+            "live_link" : "https://faas001-portfolio.herokuapp.com/",
             "github_link" : "https://github.com/faas001/node-express-site",
             "image_urls" : [
                               "images\\portL.png",
