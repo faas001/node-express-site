@@ -38,8 +38,8 @@ app.use((err, req, res, next) => {
 });
 
 // Start the express server to serve the localhost at port 3000
-app.listen(3000, () => {
-    console.log('The application is listening on port 3000...');
+app.listen(process.env.PORT, () => {
+    console.log('The application is listening on port 3000...', process.env.PORT);
 
 });
 
