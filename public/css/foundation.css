@@ -540,7 +540,9 @@ textarea {
       flex: 0 0 auto;
   min-height: 0px;
   min-width: 0px;
-  width: 100%; }
+  width: 100%; 
+  
+  }
   .cell.auto {
     -ms-flex: 1 1 0px;
         flex: 1 1 0px; }
@@ -584,7 +586,8 @@ textarea {
   width: 41.66667%; }
 
 .grid-x > .small-6 {
-  width: 50%; }
+  width: 50%;
+  height: 50%; }
 
 .grid-x > .small-7 {
   width: 58.33333%; }
@@ -630,7 +633,8 @@ textarea {
   .grid-x > .medium-8 {
     width: 66.66667%; }
   .grid-x > .medium-9 {
-    width: 75%; }
+    width: 75%;
+    height: 75%; }
   .grid-x > .medium-10 {
     width: 83.33333%; }
   .grid-x > .medium-11 {
@@ -664,7 +668,8 @@ textarea {
   .grid-x > .large-8 {
     width: 66.66667%; }
   .grid-x > .large-9 {
-    width: 75%; }
+    width: 75%; 
+    height: 75%; }
   .grid-x > .large-10 {
     width: 83.33333%; }
   .grid-x > .large-11 {

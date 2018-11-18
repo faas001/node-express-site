@@ -27,8 +27,8 @@ block content
         a.button.expanded(href=`${projects[id].live_link}` target="_blank") Live Demo
         a.button.expanded(href=`${projects[id].github_link}` target="_blank") GitHub Repo
     
-      //- Loop through the project images to display on the project page. The below will exclude the first item in the images array since it's used for the main landing page. 
+    //- Loop through the project images to display on the project page. The below will exclude the first item in the images array since it's used for the main landing page. 
       
-      each image, index in projects[id].image_urls
-        if index != 0
-          img.image(src=`static\\${image}` class='cover')
+    each image, index in projects[id].image_urls
+      if index != 0
+        img.image(src=`static\\${image}`)

@@ -19,8 +19,14 @@ app.get('/about', (req, res) => {
 });
 
 // render the project page that coincides with the project clicked (via id field)
-app.get('/project_:id', (req, res) => { 
+app.get('/project_:id', (req, res, next) => { 
+    
+    if (req.params.id < projects.length) {
     res.render('project', { projects, id: req.params.id });
+    } else {
+    next();
+    }
+    
 });
 
 // Create page not found error message if one of the above routes is not request
@@ -40,8 +46,8 @@ app.use((err, req, res, next) => {
 // The below 'process.env.PORT' will need to be replaced with '3000' if you downloaded repo and want to run locally.
 // I am experimenting with hosting this online with Heroku free and was getting application error with user assigned port.
 // the 'process.env.PORT' will use the port provided by the Heroku server and the app works.
-app.listen(process.env.PORT, () => {
-    console.log('The application is listening on Heroku assigned port ', process.env.PORT);
+app.listen(3000, () => {
+    console.log('The application is listening on port 3000...');
 
 });
 

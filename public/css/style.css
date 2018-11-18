@@ -59,20 +59,14 @@ a:hover{
 .image{
   display: inline-block;
   max-width: 100%;
+  height: auto;
+  object-fit: contain;
   margin-bottom: 1rem;
   border: solid 4px #fefefe;
   border-radius: 0;
   box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.2);
   line-height: 0;
- 
-}
-
-.contain {
-  object-fit: contain;
-}
-
-.cover {
-  object-fit: cover;
+  
 }
 
 .portfolio-me{
@@ -149,6 +143,7 @@ a:hover{
 
 .portfolio-meta{
   padding-left: 20px;
+
 }
 
   .portfolio-meta .button{
